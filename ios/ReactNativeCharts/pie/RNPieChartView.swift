@@ -16,7 +16,7 @@ class RNPieChartView: RNChartViewBase {
     override var dataExtract: DataExtract {
         return _dataExtract
     }
-  
+
     override init(frame: CoreGraphics.CGRect) {
 
         self._chart = PieChartView(frame: frame)
@@ -78,7 +78,7 @@ class RNPieChartView: RNChartViewBase {
             attrString = NSMutableAttributedString(string: json["text"].stringValue)
             attrString?.setAttributes([
                 NSForegroundColorAttributeName: color!,
-                NSFontAttributeName: NSUIFont.systemFont(ofSize: fontSize),
+                NSFontAttributeName: NSUIFont.boldSystemFont(ofSize: fontSize),
                 NSParagraphStyleAttributeName: paragraphStyle
                 ], range: NSMakeRange(0, attrString!.length))
         }
@@ -117,7 +117,7 @@ class RNPieChartView: RNChartViewBase {
     func setEntryLabelTextSize(_ size: NSNumber) {
         chart.entryLabelFont = chart.entryLabelFont?.withSize(CGFloat(size))
     }
-    
+
     func setDrawEntryLabels(_ enabled: Bool) {
         chart.drawEntryLabelsEnabled = enabled
     }
