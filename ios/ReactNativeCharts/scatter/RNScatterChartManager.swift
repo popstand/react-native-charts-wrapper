@@ -13,7 +13,7 @@ class RNScatterChartManager: RCTViewManager, RNBarLineChartBaseManager {
     return ins;
   }
 
-  open static func requiresMainQueueSetup() -> Bool {
+  override open static func requiresMainQueueSetup() -> Bool {
     return true;
   }
   
