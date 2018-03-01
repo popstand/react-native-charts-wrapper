@@ -17,3 +17,7 @@ dependencies {
     compile 'com.facebook.react:react-native:0.20.+'
     compile 'com.github.popstand:MPAndroidChart:master-SNAPSHOT'
 }
+
+configurations.all {
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
