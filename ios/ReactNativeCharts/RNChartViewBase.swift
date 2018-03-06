@@ -63,9 +63,9 @@ open class RNChartViewBase: UIView, ChartViewDelegate {
             legend.maxSizePercent = CGFloat(json["maxSizePercent"].numberValue)
         }
         
-        if json["position"].string != nil {
-            legend.position = BridgeUtils.parseLegendPosition(json["position"].stringValue)
-        }
+//        if json["position"].string != nil {
+//            legend.position = BridgeUtils.parseLegendPosition(json["position"].stringValue)
+//        }
         
         
         if json["form"].string != nil {
@@ -101,7 +101,7 @@ open class RNChartViewBase: UIView, ChartViewDelegate {
                     // TODO null label should start a group
                     // TODO -2 color should avoid drawing a form
                     
-                    legend.setCustom(colors: BridgeUtils.parseColors(colorsArray), labels: labelsArray.map({ return $0.stringValue }))
+//                    legend.setCustom(colors: BridgeUtils.parseColors(colorsArray), labels: labelsArray.map({ return $0.stringValue }))
                 }
             }
         }

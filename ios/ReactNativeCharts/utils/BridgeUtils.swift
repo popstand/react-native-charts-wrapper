@@ -41,40 +41,40 @@ class BridgeUtils {
         }
     }
     
-    static func parseLegendPosition(_ position: String) -> Legend.Position {
-        let iosEnumString = androidEnumToIOSEnum(position)
-        
-        switch iosEnumString {
-        case "rightOfChart":
-            return .rightOfChart
-        case "rightOfChartCenter":
-            return .rightOfChartCenter
-        case "rightOfChartInside":
-            return .rightOfChartInside
-        case "leftOfChart":
-            return .leftOfChart
-        case "leftOfChartCenter":
-            return .leftOfChartCenter
-        case "leftOfChartInside":
-            return .leftOfChartInside
-        case "belowChartLeft":
-            return .belowChartLeft
-        case "belowChartRight":
-            return .belowChartRight
-        case "belowChartCenter":
-            return .belowChartCenter
-        case "aboveChartLeft":
-            return .aboveChartLeft
-        case "aboveChartRight":
-            return .aboveChartRight
-        case "aboveChartCenter":
-            return .aboveChartCenter
-        case "piechartCenter":
-            return .piechartCenter
-        default:
-            return .belowChartLeft
-        }
-    }
+//    static func parseLegendPosition(_ position: String) -> Legend.Position {
+//        let iosEnumString = androidEnumToIOSEnum(position)
+//        
+//        switch iosEnumString {
+//        case "rightOfChart":
+//            return .rightOfChart
+//        case "rightOfChartCenter":
+//            return .rightOfChartCenter
+//        case "rightOfChartInside":
+//            return .rightOfChartInside
+//        case "leftOfChart":
+//            return .leftOfChart
+//        case "leftOfChartCenter":
+//            return .leftOfChartCenter
+//        case "leftOfChartInside":
+//            return .leftOfChartInside
+//        case "belowChartLeft":
+//            return .belowChartLeft
+//        case "belowChartRight":
+//            return .belowChartRight
+//        case "belowChartCenter":
+//            return .belowChartCenter
+//        case "aboveChartLeft":
+//            return .aboveChartLeft
+//        case "aboveChartRight":
+//            return .aboveChartRight
+//        case "aboveChartCenter":
+//            return .aboveChartCenter
+//        case "piechartCenter":
+//            return .piechartCenter
+//        default:
+//            return .belowChartLeft
+//        }
+//    }
     
     static func parseYAxisLabelPosition(_ position: String) -> YAxis.LabelPosition {
         let iosEnumString = androidEnumToIOSEnum(position)
